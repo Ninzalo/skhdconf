@@ -1,0 +1,33 @@
+# change window focus within space
+ctrl + shift - j : yabai -m window --focus south
+ctrl + shift - k : yabai -m window --focus north
+ctrl + shift - h : yabai -m window --focus west || yabai -m display --focus west
+ctrl + shift - l : yabai -m window --focus east || yabai -m display --focus east
+
+# rotate layout clockwise
+ctrl + alt - r : yabai -m space --rotate 270
+
+# flip along y-axis
+ctrl + alt - y : yabai -m space --mirror y-axis
+ctrl + alt - x : yabai -m space --mirror x-axis
+
+# maximize a window
+ctrl + alt - m : yabai -m window --toggle zoom-fullscreen
+ctrl + alt - f : yabai -m window --toggle zoom-fullscreen --toggle float
+
+# balance out tree of windows (resize to occupy same area)
+ctrl + alt - e : yabai -m space --balance
+
+# swap windows
+ctrl + alt - j : yabai -m window --swap south
+ctrl + alt - k : yabai -m window --swap north
+ctrl + alt - h : "${HOME}"/.config/skhd/scripts/move_window_left
+ctrl + alt - l : "${HOME}"/.config/skhd/scripts/move_window_right
+
+# toggle floating window size
+ctrl + alt - t : "${HOME}"/.config/skhd/scripts/toggle_float_window_size
+
+# stop/start/restart yabai
+# ctrl - q : yabai --stop-service
+# ctrl - s : yabai --start-service
+ctrl + shift + alt - r : yabai --restart-service; yabai -m display --focus next; yabai -m display --focus prev
