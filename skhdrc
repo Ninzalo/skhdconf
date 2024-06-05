@@ -21,11 +21,11 @@ ctrl + alt - e : yabai -m space --balance
 # swap windows
 ctrl + alt - j : yabai -m window --swap south
 ctrl + alt - k : yabai -m window --swap north
-ctrl + alt - h : "${HOME}"/.config/skhd/scripts/move_window_left
-ctrl + alt - l : "${HOME}"/.config/skhd/scripts/move_window_right
+ctrl + alt - h : "${HOME}"/.config/skhd/scripts/move_window_left.sh
+ctrl + alt - l : "${HOME}"/.config/skhd/scripts/move_window_right.sh
 
 # toggle floating window size
-ctrl + alt - t : "${HOME}"/.config/skhd/scripts/toggle_float_window_size
+ctrl + alt - t : "${HOME}"/.config/skhd/scripts/toggle_float_window_size.sh
 
 # stop/start/restart yabai
 # ctrl - q : yabai --stop-service
